@@ -20,7 +20,7 @@ export default function Overview() {
           <Receivable />
         </div>
       </div>
-      <div className={styles.container}>
+      <div>
         <Footer />
       </div>
     </div>

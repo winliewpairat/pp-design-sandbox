@@ -5,8 +5,19 @@
 @import '../styles/theme/button.scss';
 
 .main {
-    display: grid;
-    grid-template-rows: 1fr;
+
+    @include breakpoint('mobile') {
+        display: block;
+    }
+
+    @include breakpoint('tablet') {
+        display: block;
+    }
+
+    @include breakpoint('desktop') {
+        display: grid;
+        grid-template-rows: 80vh 1fr;
+    }
 }
 
 .container {

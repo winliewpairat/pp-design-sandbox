@@ -23,15 +23,16 @@
 
 .nested {
     justify-content: space-between;
-    padding: $space-16;
 
     @include breakpoint('mobile') {
         flex-direction: column;
+        padding: $space-16;
 
     }
 
     @include breakpoint('tablet') {
         flex-direction: column;
+        padding: $space-24;
     }
 }
 
@@ -52,21 +53,9 @@
     display: flex;
     flex-direction: row;
     align-items: center;
+    gap: $space-40;
 }
 
-.flexMob {
-    display: flex;
-    flex-direction: row;
-
-    @include breakpoint('mobile') {
-        flex-direction: column;
-
-    }
-
-    @include breakpoint('tablet') {
-        flex-direction: row;
-    }
-}
 
 
 .footer {
