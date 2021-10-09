@@ -1,13 +1,28 @@
-import NavBar from "../components/nav";
-import Overview from "../components/overview";
+import Nav from "../components/nav";
+import Summary from "../components/summary";
+import Deployed from "../components/deployed";
+import CTA from "../components/cta";
+import styles from "../pages/index.module.scss";
+import Receivable from "../components/receivable";
+import Footer from "../components/footer";
 
-export default function Home() {
+export default function Overview() {
   return (
     <div>
-      <NavBar />
-    <div style={{width:"fit-content", margin: "auto"}}>
-      <Overview />
-    </div>
+      <Nav />
+      <div className={styles.main}>
+        <div className={styles.container}>
+          <Summary />
+          <div className={styles.item1}>
+            <CTA />
+            <Deployed />
+          </div>
+          <Receivable />
+        </div>
+      </div>
+      <div className={styles.container}>
+        <Footer />
+      </div>
     </div>
   );
 }

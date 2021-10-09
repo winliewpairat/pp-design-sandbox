@@ -8,27 +8,21 @@
     display: flex;
     flex-direction: column;
     padding: $space-24 0 $space-8 0;
-    border-radius: $space-8;
-    width: max-content;
     align-items: center;
 
     @include breakpoint('mobile') {
-        width: max-content;
-        align-items: center;
         padding: $space-24 $space-32 $space-8 $space-32;
     }
 
     @include breakpoint('tablet') {
-        margin: $space-24 auto;
-        width: max-content;
-        align-items: center;
+        margin: $space-32;
+        padding: auto;
     }
 
 }
 
 .nested {
     justify-content: space-between;
-    margin: auto;
     padding: $space-16;
 
     @include breakpoint('mobile') {
@@ -72,4 +66,11 @@
     @include breakpoint('tablet') {
         flex-direction: row;
     }
+}
+
+
+.footer {
+    text-align: center;
+    padding: 0 0 $space-24 0;
+    @extend .smallText;
 }

@@ -1,0 +1,32 @@
+@import '../styles/theme/breakpoint.scss';
+@import '../styles/theme/colors.scss';
+@import '../styles/theme/type.scss';
+@import '../styles/theme/space.scss';
+@import '../styles/theme/button.scss';
+
+.main {
+    display: grid;
+    grid-template-rows: 1fr;
+}
+
+.container {
+    border: 1px solid $grey-1;
+    display: grid;
+
+    @include breakpoint('mobile') {
+        display: block;
+    }
+
+    @include breakpoint('tablet') {
+        display: block;
+    }
+
+    @include breakpoint('desktop') {
+        display: grid;
+        grid-template-columns: 2fr 2fr 1fr;
+    }
+}
+
+.item1 {
+    border: 1px solid $grey-1;
+}

@@ -4,9 +4,9 @@
 @import './space.scss';
 
 .btnPrimary {
-    background-color: $teal-4;
-    padding: $space-8 $space-32;
-    color: $grey-4;
+    background-color: $grey-4;
+    padding: $space-16 $space-32;
+    color: $grey-1;
     -webkit-touch-callout: none; /* iOS Safari */
     -webkit-user-select: none; /* Safari */
      -khtml-user-select: none; /* Konqueror HTML */
@@ -21,7 +21,7 @@
 
 .btnSecondary {
     background-color: $grey-1;
-    padding: $space-8 $space-32;
+    padding: $space-16 $space-32;
     color: $grey-4;
     border: 1px solid $teal-4;
     -webkit-touch-callout: none; /* iOS Safari */

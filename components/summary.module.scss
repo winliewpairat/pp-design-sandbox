@@ -7,40 +7,33 @@
     display: flex;
     flex-direction: column;
     margin: $space-40 auto;
-    padding: auto;
 
     @include breakpoint('mobile') {
-        margin: $space-80 $space-24 $space-40 $space-24;
-        width: auto;
+        width: fit-content;
+        margin: $space-40 auto;
+        padding: $space-40 $space-40;
     }
 
     @include breakpoint('tablet') {
-        margin: $space-40 auto;
-        width: max-content;
+        margin: auto;
+        padding: $space-40 $space-80;
     }
 
 }
 
 .stats {
+    padding: $space-16 0 0 0;
+}
+
+.statsRow {
     display: flex;
     flex-direction: row;
-    margin: $space-24 0 $space-8 0;
-
-    @include breakpoint('mobile') {
-        margin: $space-16 0 0 0;
-    }
-
-    @include breakpoint('tablet') {
-        margin: $space-16 0 0 0;
-    }
-
-    @include breakpoint('desktop') {
-        margin: $space-24 0 $space-8 0;
-    }
 }
 
 .nested {
-    display: flex;
-    flex-direction: column;
-    padding: 0 $space-32 0 0;
+    padding: $space-8 0;
+}
+
+.statsRow .nested{
+    padding: $space-16 $space-24 0 0;
 }

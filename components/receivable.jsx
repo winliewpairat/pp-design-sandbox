@@ -9,33 +9,30 @@ class Receivable extends React.Component {
         <div className={styles.h5} style={{ marginBottom: "24px" }}>
           Fund Receivable
         </div>
-      <div className={styles.box}>
-        <div className={styles.nested}>
-          <div className={styles.header}>in 60 days</div>
-          <div className={styles.h5} style={{ marginBottom: "24px" }}>
-            189,014.24 ฿
-          </div>
-          <div className={styles.header}>in 60 days</div>
-          <div className={styles.h5} style={{ marginBottom: "24px" }}>
-            189,014.24 ฿
-          </div>
-          <div className={styles.header}>in 60 days</div>
-          <div className={styles.h5} style={{ marginBottom: "24px" }}>
-            189,014.24 ฿
-          </div>
-        </div>
-
-        <div className={styles.nested}>
-          <div className={styles.header}>in 60 days</div>
-          <div className={styles.h5} style={{ marginBottom: "24px" }}>
-            189,014.24 ฿
-          </div>
-          <div className={styles.header}>in 60 days</div>
-          <div className={styles.h5} style={{ marginBottom: "24px" }}>
-            189,014.24 ฿
+        <div className={styles.box}>
+          <div className={styles.nested}>
+            <div className={styles.header}>in 7 days</div>
+            <div className={styles.h4} style={{ marginBottom: "24px" }}>
+              189,014.24 ฿
+            </div>
+            <div className={styles.header}>in 14 days</div>
+            <div className={styles.h4} style={{ marginBottom: "24px" }}>
+              189,014.24 ฿
+            </div>
+            <div className={styles.header}>in 30 days</div>
+            <div className={styles.h4} style={{ marginBottom: "24px" }}>
+              189,014.24 ฿
+            </div>
+            <div className={styles.header}>in 60 days</div>
+            <div className={styles.h4} style={{ marginBottom: "24px" }}>
+              189,014.24 ฿
+            </div>
+            <div className={styles.header}>More than 60 days</div>
+            <div className={styles.h4} style={{ marginBottom: "24px" }}>
+              189,014.24 ฿
+            </div>
           </div>
         </div>
-      </div>
       </div>
     );
   }
