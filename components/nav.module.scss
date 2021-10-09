@@ -1,0 +1,103 @@
+@import '../styles/theme/colors.scss';
+@import '../styles/theme/type.scss';
+@import '../styles/theme/breakpoint.scss';
+@import '../styles/theme/space.scss';
+
+.container {
+    flex-direction: row;
+    width: 100%;
+    justify-content: space-between;
+    box-sizing: border-box;
+    align-items:center;
+    border-bottom: 1px solid $grey-1;
+
+    @include breakpoint('mobile') {
+        display: none;
+    }
+
+    @include breakpoint('tablet') {
+        display: flex;
+    }
+
+    @include breakpoint('desktop') {
+        display: flex;
+    }
+}
+
+
+.containerMobile {
+    flex-direction: row;
+    width: 100%;
+    justify-content: space-between;
+    box-sizing: border-box;
+    align-items: center;
+    border-bottom: 1px solid $grey-1;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: $grey-4;
+    z-index: 100;
+
+    @include breakpoint('mobile') {
+        display: flex;
+    }
+
+    @include breakpoint('tablet') {
+        display: none;
+    }
+
+    @include breakpoint('desktop') {
+        display: none;
+    }
+}
+
+.logo {
+    color: $teal-4;
+    @extend .header;
+
+    @include breakpoint('mobile') {
+        padding: $space-16 $space-16;
+        font-size: 0.8rem;
+    }
+
+    @include breakpoint('tablet') {
+        padding: $space-16 $space-24;
+        font-size: 0.9rem;
+    }
+
+    @include breakpoint('desktop') {
+        padding: $space-24 $space-36;
+        font-size: 1rem;
+    }
+
+}
+
+.navbar {
+    color: $grey-1;
+    @extend .button;
+}
+
+.linkStyle {
+    a {
+        margin: 0 $space-16;
+    }
+
+    @include breakpoint('mobile') {
+        font-size: 0.8rem;
+        margin-right: 0;
+    }
+
+    @include breakpoint('tablet') {
+        font-size: 0.9rem;
+        margin-right: $space-16;
+    }
+
+    @include breakpoint('desktop') {
+        font-size: 1rem;
+        margin-right: $space-24;
+    }
+}
+
+.menuButton {
+    padding: $space-16;
+}

@@ -1,0 +1,28 @@
+@import '../styles/theme/breakpoint.scss';
+@import '../styles/theme/colors.scss';
+@import '../styles/theme/type.scss';
+@import '../styles/theme/space.scss';
+
+.button {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    border-radius: 6px;
+    width: fit-content;
+    cursor: pointer;
+    margin: $space-16 0;
+
+    @include breakpoint('mobile') {
+        margin: $space-16 0 $space-24 0;
+    }
+
+    @include breakpoint('tablet') {
+        margin: $space-8 0;
+    }
+
+    @include breakpoint('desktop') {
+        margin: $space-16 0;
+    }
+}
+
+

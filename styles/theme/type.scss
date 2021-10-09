@@ -1,0 +1,269 @@
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@300;400;500;700&display=swap');
+@import './breakpoint.scss';
+
+.h1 {
+    font-family: 'IBM Plex Sans', sans-serif;
+    font-weight: 700;
+    font-size: 100px;
+    line-height: 103%;
+    text-transform: capitalize;
+    overflow: hidden;
+    white-space:nowrap;
+
+    @include breakpoint('mobile') {
+        font-size: calc(100px - 0.5rem);
+    }
+
+    @include breakpoint('tablet') {
+        font-size: calc(100px - 0.2rem);
+    }
+
+    @include breakpoint('desktop') {
+        font-size: 100px;
+    }
+
+}
+
+.h2 {
+    font-family: 'IBM Plex Sans', sans-serif;
+    font-weight: 500;
+    font-size: 72px;
+    line-height: 110%;
+    text-transform: capitalize;
+    overflow: hidden;
+    white-space:nowrap;
+
+    @include breakpoint('mobile') {
+        font-size: calc(72px - 0.5rem);
+    }
+
+    @include breakpoint('tablet') {
+        font-size: calc(72px - 0.2rem);
+    }
+
+    @include breakpoint('desktop') {
+        font-size: 72px;
+    }
+}
+
+.h3 {
+    font-family: 'IBM Plex Sans', sans-serif;
+    font-weight: 400;
+    font-size: 58px;
+    line-height: 133%;
+    text-transform: capitalize;
+    overflow: hidden;
+    white-space:nowrap;
+
+    @include breakpoint('mobile') {
+        font-size: calc(58px - 0.5rem);
+    }
+
+    @include breakpoint('tablet') {
+        font-size: calc(58px - 0.2rem);
+    }
+
+    @include breakpoint('desktop') {
+        font-size: 58px;
+    }
+}
+
+.h4 {
+    font-family: 'IBM Plex Sans', sans-serif;
+    font-weight: 500;
+    font-size: 40px;
+    line-height: 135%;
+    text-transform: capitalize;
+    overflow: hidden;
+    white-space:nowrap;
+    
+    @include breakpoint('mobile') {
+        font-size: calc(40px - 1rem);
+    }
+
+    @include breakpoint('tablet') {
+        font-size: calc(40px - 0.4rem);
+    }
+
+    @include breakpoint('desktop') {
+        font-size: 40px;
+    }
+}
+
+.h5 {
+    font-family: 'IBM Plex Sans', sans-serif;
+    font-weight: 500;
+    font-size: 32px;
+    line-height: 133%;
+    text-transform: capitalize;
+    overflow: hidden;
+    white-space:nowrap;
+
+    @include breakpoint('mobile') {
+        font-size: calc(32px - 0.5rem);
+    }
+
+    @include breakpoint('tablet') {
+        font-size: calc(32px - 0.2rem);
+    }
+
+    @include breakpoint('desktop') {
+        font-size: 32px;
+    }
+}
+
+.h6 {
+    font-family: 'IBM Plex Sans', sans-serif;
+    font-weight: 400;
+    font-size: 22px;
+    line-height: 135%;
+    text-transform: capitalize;
+    overflow: hidden;
+    white-space:nowrap;
+
+    @include breakpoint('mobile') {
+        font-size: calc(22px - 0.5rem);
+    }
+
+    @include breakpoint('tablet') {
+        font-size: calc(22px - 0.2rem);
+    }
+
+    @include breakpoint('desktop') {
+        font-size: 22px;
+    }
+}
+
+.header {
+    font-family: 'IBM Plex Sans', sans-serif;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 125%;
+    text-transform: none;
+    overflow: hidden;
+    white-space:nowrap;
+
+    @include breakpoint('mobile') {
+        font-size: calc(16px - 0.3rem);
+    }
+
+    @include breakpoint('tablet') {
+        font-size: calc(16px - 0.2rem);
+    }
+
+    @include breakpoint('desktop') {
+        font-size: 16px;
+    }
+}
+
+.smallText {
+    font-family: 'IBM Plex Sans', sans-serif;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 133%;
+    text-transform: none;
+    overflow: hidden;
+    white-space:nowrap;
+
+    @include breakpoint('mobile') {
+        font-size: calc(14px - 0.2rem);
+    }
+
+    @include breakpoint('tablet') {
+        font-size: calc(14px - 0.1rem);
+    }
+
+    @include breakpoint('desktop') {
+        font-size: 14px;
+    }
+}
+
+.bodyLarge {
+    font-family: 'IBM Plex Sans', sans-serif;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 180%;
+    text-transform: none;
+    overflow: hidden;
+    white-space:nowrap;
+
+    @include breakpoint('mobile') {
+        font-size: calc(20px - 0.5rem);
+    }
+
+    @include breakpoint('tablet') {
+        font-size: calc(20px - 0.2rem);
+    }
+
+    @include breakpoint('desktop') {
+        font-size: 20px;
+    }
+}
+
+p .body{
+    font-family: 'IBM Plex Sans', sans-serif;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 135%;
+    text-transform: none;
+
+    @include breakpoint('mobile') {
+        font-size: calc(18px - 0.5rem);
+    }
+
+    @include breakpoint('tablet') {
+        font-size: calc(18px - 0.2rem);
+    }
+
+    @include breakpoint('desktop') {
+        font-size: 18px;
+    }
+}
+
+.button {
+    font-family: 'IBM Plex Sans', sans-serif;
+    font-weight: 500;
+    font-size: 14.2px;
+    line-height: 21.3px;
+    text-transform: none;
+    overflow: hidden;
+    white-space:nowrap;
+
+    @include breakpoint('mobile') {
+        font-size: calc(14.2px - 0.1rem);
+    }
+
+    @include breakpoint('tablet') {
+        font-size: calc(14.2px - 0rem);
+    }
+
+    @include breakpoint('desktop') {
+        font-size: 14.2px;
+    }
+}
+
+.buttonText {
+    font-family: 'IBM Plex Sans', sans-serif;
+    font-weight: 500;
+    font-size: 14.2px;
+    line-height: 21.3px;
+    text-transform: none;
+    overflow: hidden;
+    white-space:nowrap;
+
+    &:hover {
+        font-weight: 700;
+    }
+
+    @include breakpoint('mobile') {
+        font-size: calc(14.2px - 0.1rem);
+    }
+
+    @include breakpoint('tablet') {
+        font-size: calc(14.2px - 0rem);
+    }
+
+    @include breakpoint('desktop') {
+        font-size: 14.2px;
+    }
+}
