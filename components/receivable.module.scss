@@ -1,0 +1,25 @@
+@import '../styles/theme/breakpoint.scss';
+@import '../styles/theme/colors.scss';
+@import '../styles/theme/type.scss';
+@import '../styles/theme/space.scss';
+@import '../styles/theme/button.scss';
+
+.container {
+    background-color: $grey-3;
+    display: flex;
+    flex-direction: column;
+    border-radius: $space-8;
+    margin: auto;
+    width: max-content;
+    padding: $space-32;
+}
+
+.box {
+    display: flex;
+    flex-direction: row;
+    gap: 20vw;
+}
+
+.nested {
+    margin: $space-8 0 0 0;
+}

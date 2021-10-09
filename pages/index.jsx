@@ -1,23 +1,28 @@
-import Head from 'next/head'
-import Image from 'next/image'
-import NavBar from '../components/nav'
-import Summary from '../components/summary'
-import Deployed from '../components/deployed'
-import CTA from '../components/cta'
-import styled from 'styled-components'
+import NavBar from "../components/nav";
+import Summary from "../components/summary";
+import Deployed from "../components/deployed";
+import Footer from "../components/footer"
+import Receivable from "../components/receivable";
+import CTA from "../components/cta";
+import styled from "styled-components";
 
 const Wrapper = styled.div`
-width: 100%;
-margin: auto;
-`
+  width: auto;
+  margin: auto;
+  
+`;
 
 export default function Overview() {
   return (
-    <Wrapper>
-      <NavBar/>
-      <Summary/>
-      <CTA />
-      <Deployed />
-    </Wrapper>
-  )
+    <div>
+      <NavBar />
+      <Wrapper>
+        <Summary />
+        <CTA />
+        <Deployed />
+        <Receivable />
+        <Footer />
+      </Wrapper>
+    </div>
+  );
 }

@@ -9,7 +9,7 @@ const data = [
 
 export default function App() {
   return (
-    <PieChart width={240} height={240}>
+    <PieChart width={200} height={240}>
       <Pie
         dataKey="value"
         data={data}
