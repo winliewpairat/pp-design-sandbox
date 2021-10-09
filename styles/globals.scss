@@ -32,16 +32,15 @@ button {
   height: auto;
 
   @include breakpoint('mobile') {
-      display: block;
-      top: 24px;
+    display: block;
+    top: 24px;
   }
 
-
   @include breakpoint('tablet') {
-      display: none;
+    display: none;
   }
 
   @include breakpoint('desktop') {
-      display: none;
+    display: none;
   }
 }
