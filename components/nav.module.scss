@@ -57,7 +57,7 @@
 
     @include breakpoint('mobile') {
         padding: $space-16 $space-16;
-        font-size: 0.8rem;
+        font-size: 0.9rem;
     }
 
     @include breakpoint('tablet') {

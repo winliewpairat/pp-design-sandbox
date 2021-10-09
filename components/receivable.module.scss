@@ -10,14 +10,25 @@
     flex-direction: column;
     border-radius: $space-8;
     margin: auto;
-    width: max-content;
     padding: $space-32;
+
+    @include breakpoint('mobile') {
+        margin: auto $space-8;
+        width: auto;
+    }
+
+    @include breakpoint('tablet') {
+        margin: $space-24 auto;
+        width: max-content;
+    }
+
+
 }
 
 .box {
     display: flex;
     flex-direction: row;
-    gap: 20vw;
+    gap: 16vw;
 }
 
 .nested {

@@ -13,14 +13,13 @@
     align-items: center;
 
     @include breakpoint('mobile') {
-        margin: auto $space-16;
-        padding: $space-24 0 $space-8 0;
         width: max-content;
+        align-items: center;
+        padding: $space-24 $space-32 $space-8 $space-32;
     }
 
     @include breakpoint('tablet') {
         margin: $space-24 auto;
-        padding: $space-24 $space-40 $space-16 $space-40;
         width: max-content;
         align-items: center;
     }

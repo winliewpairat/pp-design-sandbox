@@ -2,7 +2,7 @@ import React from "react";
 
 export default function Overview() {
   return (
-    <div style={{ margin: "auto", width: "max-content" }}>
+    <div style={{ margin: "auto", width: "auto" }}>
       <div style={{ padding: "40px", textAlign: "center" }}>
         If you have any question please feel free to
         <br />

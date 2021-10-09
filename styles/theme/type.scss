@@ -230,7 +230,7 @@ p .body{
     white-space:nowrap;
 
     @include breakpoint('mobile') {
-        font-size: calc(14.2px - 0.1rem);
+        font-size: 14.2px;
     }
 
     @include breakpoint('tablet') {
