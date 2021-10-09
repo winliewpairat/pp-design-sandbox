@@ -144,11 +144,11 @@
     white-space:nowrap;
 
     @include breakpoint('mobile') {
-        font-size: calc(16px - 0.3rem);
+        font-size: calc(16px - 0.1rem);
     }
 
     @include breakpoint('tablet') {
-        font-size: calc(16px - 0.2rem);
+        font-size: 16px;
     }
 
     @include breakpoint('desktop') {
