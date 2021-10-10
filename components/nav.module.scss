@@ -67,6 +67,11 @@
 
 }
 
+.containerMobile .logo {
+    width: 200px;
+    white-space: break-spaces;
+}
+
 .navbar {
     color: $grey-1;
     @extend .button;

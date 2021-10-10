@@ -11,7 +11,7 @@
     @include breakpoint('mobile') {
         grid-template-columns: 1fr;
         grid-template-rows: 1fr;
-        margin: $space-40 auto auto auto;
+        margin: $space-64 auto auto auto;
     }
 
     @include breakpoint('tablet') {

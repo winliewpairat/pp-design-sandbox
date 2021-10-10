@@ -21,12 +21,14 @@
 
 .btnPrimary:hover {
     background-color: $grey-3;
+    border-radius: $space-8;
     transition: 0.5s;
     color: $grey-1;
 }
 
 .btnPrimary:active {
     transform:scale(0.98);
+    border-radius: $space-8;
     transition: 0.5s;
 }
 
@@ -48,11 +50,13 @@
 
 .btnSecondary:hover {
     background-color: $grey-2;
+    border-radius: $space-8;
     transition: 0.5s;
     color: $grey-4;
 }
 
 .btnSecondary:active {
     transform:scale(0.98);
+    border-radius: $space-8;
     transition: 0.5s;
 }
