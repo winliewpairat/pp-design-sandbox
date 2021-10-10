@@ -55,17 +55,14 @@
 
     @include breakpoint('mobile') {
         padding: $space-16 $space-16;
-        font-size: 0.9rem;
     }
 
     @include breakpoint('tablet') {
         padding: $space-16 $space-24;
-        font-size: 0.9rem;
     }
 
     @include breakpoint('desktop') {
         padding: $space-24 $space-36;
-        font-size: 1rem;
     }
 
 }
