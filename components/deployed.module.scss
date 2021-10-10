@@ -8,7 +8,7 @@
     display: grid;
 
     @include breakpoint('mobile') {
-        grid-template-columns: 1fr 3fr 1fr;
+        grid-template-columns: 1fr;
         grid-template-rows: 1fr;
         padding: $space-40;
     }
@@ -37,7 +37,7 @@
 
     @include breakpoint('mobile') {
         grid-template-rows: 1fr;
-        grid-column-start: 2;
+        grid-column-start: 1;
     }
 
     @include breakpoint('tablet') {
@@ -54,7 +54,7 @@
     grid-row-start: 2;
 
     @include breakpoint('mobile') {
-        grid-column-start: 2;
+        grid-column-start: 1;
     }
 
     @include breakpoint('tablet') {

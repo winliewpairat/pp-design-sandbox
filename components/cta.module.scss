@@ -8,7 +8,6 @@
     background-color: $teal-4;
     color: $grey-4;
     display: grid;
-    flex-direction: column;
     padding: $space-24 0 $space-8 0;
     justify-items: center;
     width: auto;
@@ -51,6 +50,7 @@
     flex-direction: column;
     width: fit-content;
     align-items: center;
+    gap: $space-8;
 
     @include breakpoint('mobile') {
         padding: 0 $space-24;
