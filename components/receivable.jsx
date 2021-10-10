@@ -8,7 +8,7 @@ class Receivable extends React.Component {
       <div className={styles.container}>
         <div className={styles.box}>
           <div className={styles.gridHeader}>
-            <div className={styles.h5}>Fund Receivable 💰</div>
+            <div className={styles.h5}>Fund Receivable</div>
           </div>
           <div className={styles.gridContainer}>
             <div>

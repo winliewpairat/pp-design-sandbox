@@ -9,7 +9,7 @@ class Summary extends React.Component {
       <div className={styles.container}>
         <ReactTooltip />
         <div className={styles.welcome}>
-          <div className={styles.h5}>👋 Welcome, Mr.Andrew Wang</div>
+          <div className={styles.h5}>Welcome, Mr.Andrew Wang</div>
           <div className={styles.h5}>Here is your investment summary</div>
         </div>
         <div className={styles.stats}>

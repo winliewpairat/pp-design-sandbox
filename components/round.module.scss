@@ -12,26 +12,33 @@
     display: grid;
     padding: $space-40;
     align-items: center;
-    width: max-content;
+    width: 100%;
     gap: $space-16;
     margin: auto;
+
+    @include breakpoint('tablet') {
+        width: max-content;
+    }
 }
 
 
 .wrapper {
-    display: grid;
+    display: block;
     align-items: center;
     width: auto;
-    gap: $space-16;
+    background-color: $grey-3;
+    padding: $space-16;
+    grid-template-columns: 0;
+
 
     @include breakpoint('mobile') {
         gap: $space-16;
     }
 
     @include breakpoint('tablet') {
-        grid-template-rows: 1fr;
-        grid-template-columns: 1fr 1fr 1fr;
+        display: grid;
         gap: $space-24;
+        grid-template-columns: 1fr 1fr 1fr;
     }
 }
 
@@ -49,25 +56,13 @@
         grid-template-columns: 1fr 1fr 1fr;
     }
 
-    @include breakpoint('desktop') {
-    }
+    @include breakpoint('desktop') {}
 }
 
-.table {
-    @include breakpoint('desktop') {
-        grid-template-columns: 1fr 1fr 1fr;
-    }
-}
-
-.nested {
-    display: grid;
-    grid-column-start: 1;
-
+.gridContainer .header {
+    padding: $space-8 0 0 0;
+    
     @include breakpoint('tablet') {
-        grid-column-start: 1;
-    }
-
-    @include breakpoint('desktop') {
-        grid-column-start: 1;
+        padding: auto;
     }
 }
