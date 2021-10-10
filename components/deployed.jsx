@@ -8,7 +8,7 @@ class Deployed extends React.Component {
     return (
       <div className={styles.container}>
         <div className={styles.head}>
-          <div className={styles.h5}>Current Funds Deployed</div>
+          <div className={styles.h5}>Current Funds Deployed 🚀</div>
           <div className={styles.header}>
             Funds Available - 14,000,000 ฿ - 10%
           </div>

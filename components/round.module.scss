@@ -1,0 +1,73 @@
+@import '../styles/theme/breakpoint.scss';
+@import '../styles/theme/colors.scss';
+@import '../styles/theme/type.scss';
+@import '../styles/theme/space.scss';
+@import '../styles/theme/button.scss';
+
+.main {
+    display: grid;
+}
+
+.container {
+    display: grid;
+    padding: $space-40;
+    align-items: center;
+    width: max-content;
+    gap: $space-16;
+    margin: auto;
+}
+
+
+.wrapper {
+    display: grid;
+    align-items: center;
+    width: auto;
+    gap: $space-16;
+
+    @include breakpoint('mobile') {
+        gap: $space-16;
+    }
+
+    @include breakpoint('tablet') {
+        grid-template-rows: 1fr;
+        grid-template-columns: 1fr 1fr 1fr;
+        gap: $space-24;
+    }
+}
+
+.header {
+    display: grid;
+    grid-column-start: 1;
+    grid-column-end: 3;
+    align-content: center;
+}
+
+.gridContainer {
+    gap: $space-40;
+
+    @include breakpoint('tablet') {
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+
+    @include breakpoint('desktop') {
+    }
+}
+
+.table {
+    @include breakpoint('desktop') {
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+}
+
+.nested {
+    display: grid;
+    grid-column-start: 1;
+
+    @include breakpoint('tablet') {
+        grid-column-start: 1;
+    }
+
+    @include breakpoint('desktop') {
+        grid-column-start: 1;
+    }
+}

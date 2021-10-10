@@ -19,7 +19,7 @@ class CTA extends React.Component {
           </div>
           <div className={styles.nested}>
             <div className={styles.h6}>To Check Investment Round</div>
-            <Link href="">
+            <Link href="#round">
             <Button
             label="Investment Round"
             cname={styles.btnSecondary}

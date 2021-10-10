@@ -1,0 +1,8 @@
+@import '../styles/theme/breakpoint.scss';
+@import '../styles/theme/colors.scss';
+@import '../styles/theme/type.scss';
+@import '../styles/theme/space.scss';
+
+.container {
+    padding: $space-24;
+}

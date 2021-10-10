@@ -4,6 +4,7 @@ import Deployed from "../components/deployed";
 import CTA from "../components/cta";
 import styles from "../pages/index.module.scss";
 import Receivable from "../components/receivable";
+import Round from "../components/round"
 import Footer from "../components/footer";
 
 export default function Overview() {
@@ -19,12 +20,12 @@ export default function Overview() {
           </div>
         </div>
         <div className={styles.container2}>
-            <Receivable />
-            <Deployed />
-          </div>
+          <Receivable />
+          <Round />
+        </div>
       </div>
       <div>
-        <Footer />
+      <Footer />
       </div>
     </div>
   );

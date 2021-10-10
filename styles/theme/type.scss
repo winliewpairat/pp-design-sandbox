@@ -103,6 +103,8 @@ p .body{
     text-transform: none;
     overflow: hidden;
     white-space:nowrap;
+    text-decoration: underline;
+    cursor: pointer;
 
     &:hover {
         font-weight: 700;
