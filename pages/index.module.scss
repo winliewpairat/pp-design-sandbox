@@ -37,6 +37,24 @@
     }
 }
 
+.container2 {
+    border: 1px solid $grey-1;
+    display: grid;
+
+    @include breakpoint('mobile') {
+        display: block;
+    }
+
+    @include breakpoint('tablet') {
+        display: block;
+    }
+
+    @include breakpoint('desktop') {
+        display: grid;
+        grid-template-columns: 1fr 2fr;
+    }
+}
+
 .item1 {
     border: 1px solid $grey-1;
 }

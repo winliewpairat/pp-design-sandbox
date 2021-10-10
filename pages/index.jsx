@@ -18,6 +18,10 @@ export default function Overview() {
             <Deployed />
           </div>
         </div>
+        <div className={styles.container2}>
+            <Receivable />
+            <Deployed />
+          </div>
       </div>
       <div>
         <Footer />
