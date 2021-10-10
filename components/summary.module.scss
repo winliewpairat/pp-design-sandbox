@@ -41,6 +41,17 @@
     }
 }
 
+.welcome .h5 {
+    font-size: 1.25rem;
+
+    @include breakpoint('mobile') {
+        font-size: 1.25rem;
+    }
+    @include breakpoint('tablet') {
+        font-size: 2rem;
+    }
+}
+
 .tool {
     display: flex;
     flex-direction: row;
