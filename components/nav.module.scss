@@ -77,25 +77,38 @@
     @extend .button;
 }
 
-.linkStyle {
-    a {
-        margin: 0 $space-16;
-    }
+.linkStyle a {
 
     @include breakpoint('mobile') {
-        font-size: 0.8rem;
         margin-right: 0;
     }
 
     @include breakpoint('tablet') {
-        font-size: 0.9rem;
         margin-right: $space-16;
     }
 
     @include breakpoint('desktop') {
-        font-size: 1rem;
         margin-right: $space-24;
+        
     }
+
+}
+
+.linkStyle a {
+
+    @include breakpoint('mobile') {
+        margin-right: 0;
+    }
+
+    @include breakpoint('tablet') {
+        margin-right: $space-16;
+    }
+
+    @include breakpoint('desktop') {
+        margin-right: $space-24;
+        
+    }
+
 }
 
 .menuButton {
