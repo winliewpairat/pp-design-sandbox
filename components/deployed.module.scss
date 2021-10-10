@@ -5,57 +5,81 @@
 @import '../styles/theme/button.scss';
 
 .container {
-    display: flex;
-    flex-direction: column;
-    padding: $space-24 0 $space-8 0;
-    align-items: center;
+    display: grid;
 
     @include breakpoint('mobile') {
-        padding: $space-24 $space-32 $space-8 $space-32;
+        grid-template-columns: 1fr 3fr 1fr;
+        grid-template-rows: 1fr;
+        padding: $space-40;
     }
 
     @include breakpoint('tablet') {
-        margin: $space-32;
-        padding: auto;
+        grid-template-columns: 1fr 2fr 1fr;
+        grid-template-rows: 1fr 3fr;
+        margin: auto;
+        padding: $space-40;
     }
 
+    @include breakpoint('desktop') {
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 3fr;
+        margin: auto;
+        padding: $space-40;
+    }
+}
+
+
+.head {
+    display: grid;
+    width: max-content;
+    grid-row-start: 1;
+    height: fit-content;
+
+    @include breakpoint('mobile') {
+        grid-template-rows: 1fr;
+        grid-column-start: 2;
+    }
+
+    @include breakpoint('tablet') {
+        grid-column-start: 2;
+
+    }
+
+    @include breakpoint('desktop') {
+    }
+}
+
+.allocateDetails {
+    display: grid;
+    grid-row-start: 2;
+
+    @include breakpoint('mobile') {
+        grid-column-start: 2;
+    }
+
+    @include breakpoint('tablet') {
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-column-start: 2;
+    }
 }
 
 .nested {
     justify-content: space-between;
 
     @include breakpoint('mobile') {
-        flex-direction: column;
         padding: $space-16;
 
     }
 
     @include breakpoint('tablet') {
-        flex-direction: column;
         padding: $space-24;
     }
-}
-
-
-.box {
-    display: flex;
-    flex-direction: column;
-    align-items: left;
-    width: max-content;
 }
 
 
 .chart {
     width: max-content;
 }
-
-.allocateDetails {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    gap: $space-40;
-}
-
 
 
 .footer {

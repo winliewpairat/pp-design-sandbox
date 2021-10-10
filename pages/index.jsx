@@ -17,7 +17,6 @@ export default function Overview() {
             <CTA />
             <Deployed />
           </div>
-          <Receivable />
         </div>
       </div>
       <div>

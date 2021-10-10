@@ -4,36 +4,79 @@
 @import '../styles/theme/space.scss';
 
 .container {
-    display: flex;
-    flex-direction: column;
-    margin: $space-40 auto;
+    display: grid;
+    margin: $space-40 auto auto auto;
+    padding: $space-40;
 
     @include breakpoint('mobile') {
-        width: fit-content;
-        margin: $space-40 auto;
-        padding: $space-40 $space-40;
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr;
+        margin: $space-40 auto auto auto;
     }
 
     @include breakpoint('tablet') {
+        grid-template-columns: 1fr 2fr 1fr;
+        grid-template-rows: 1fr;
         margin: auto;
-        padding: $space-40 $space-80;
     }
 
+    @include breakpoint('desktop') {
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr;
+    }
+}
+
+.welcome {
+    grid-column-start: 2;
+    grid-row-start: 1;
+
+    @include breakpoint('mobile') {
+        grid-column-start: 1;
+        grid-column-end: 3;
+        grid-row-start: 1;
+    }
+    @include breakpoint('tablet') {
+        grid-column-start: 2;
+        grid-row-start: 1;
+    }
 }
 
 .stats {
     padding: $space-16 0 0 0;
+    display: grid;
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-row-gap: $space-8;
+
+    @include breakpoint('mobile') {
+        grid-column-start: 1;
+        grid-column-end: 3;
+        grid-row-start: 2;
+    }
+
+    @include breakpoint('tablet') {
+        grid-column-start: 2;
+        grid-row-start: 2;
+    }
 }
 
 .statsRow {
-    display: flex;
-    flex-direction: row;
-}
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-column-gap: $space-16;
+    grid-column-start: 2;
+    grid-row-start: 3;
 
-.nested {
-    padding: $space-8 0;
+    @include breakpoint('mobile') {
+        grid-column-start: 1;
+        grid-column-end: 3;
+        grid-row-start: 3;
+    }
+    @include breakpoint('tablet') {
+        grid-column-start: 2;
+        grid-row-start: 3;
+    }
 }
 
 .statsRow .nested{
-    padding: $space-16 $space-24 0 0;
+    padding-top: $space-16;
 }

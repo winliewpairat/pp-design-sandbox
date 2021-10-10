@@ -16,7 +16,6 @@
 
     @include breakpoint('desktop') {
         display: grid;
-        grid-template-rows: 80vh 1fr;
     }
 }
 
@@ -34,7 +33,7 @@
 
     @include breakpoint('desktop') {
         display: grid;
-        grid-template-columns: 2fr 2fr 1fr;
+        grid-template-columns: 2fr 2fr;
     }
 }
 
