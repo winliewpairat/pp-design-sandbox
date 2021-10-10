@@ -13,12 +13,12 @@ class CTA extends React.Component {
           <div className={styles.nested}>
             <div className={styles.h6}>Start building wealth with us</div>
             <Button
-            label="Start Investing"
+            label="Deposit Now"
             cname={styles.btnPrimary}
             />
           </div>
           <div className={styles.nested}>
-            <div className={styles.h6}>To Check Investment Round</div>
+            <div className={styles.h6}>Check Investment Round</div>
             <Link href="#round">
             <Button
             label="Investment Round"
