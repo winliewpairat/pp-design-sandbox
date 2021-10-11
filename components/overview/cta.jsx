@@ -1,9 +1,8 @@
 /* eslint-disable @next/next/link-passhref */
 import React from "react";
 import styles from "./cta.module.scss";
-import Button from "./button";
+import Button from "../button";
 import Link from "next/link";
-import Chart from "./chart"
 
 class CTA extends React.Component {
   render() {

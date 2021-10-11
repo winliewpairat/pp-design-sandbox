@@ -14,6 +14,7 @@ class NavBar extends React.Component {
           <nav className={styles.navbar}>
             <div className={styles.linkStyle}>
               <Link href="">Overview</Link>
+              <Link href="">Investment Round</Link>
               <Link href="">Deposit</Link>
               <Link href="">Withdraw</Link>
               <Link href="">FAQs</Link>

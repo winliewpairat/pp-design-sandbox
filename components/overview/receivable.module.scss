@@ -1,0 +1,82 @@
+@import '../../styles/theme/breakpoint.scss';
+@import '../../styles/theme/colors.scss';
+@import '../../styles/theme/type.scss';
+@import '../../styles/theme/space.scss';
+@import '../../styles/theme/button.scss';
+
+.container {
+    display: grid;
+    padding: $space-40;
+    color: $grey-4;
+    background-color: $teal-4;
+    align-content: center;
+    width: auto;
+
+    @include breakpoint('mobile') {
+    }
+
+    @include breakpoint('tablet') {
+        padding: $space-40;
+    }
+}
+
+.box {
+    width: 100%;
+    margin: auto;
+    display: grid;
+    row-gap: $space-16;
+
+    @include breakpoint('mobile') {
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 9fr;
+    }
+
+    @include breakpoint('tablet') {
+        width: 60%;
+    }
+}
+
+.gridHeader{
+    @include breakpoint('mobile') {
+        grid-column-start: 1;
+    }
+
+    @include breakpoint('tablet') {
+        grid-column-start: 1;
+    }
+}
+
+
+
+.wrapper {
+    display: block;
+    align-items: center;
+    background-color: $grey-2;
+    padding: $space-16;
+    grid-template-columns: 0;
+    justify-items: stretch;
+    margin-bottom: $space-8;
+
+
+    @include breakpoint('mobile') {
+        gap: $space-16;
+    }
+
+    @include breakpoint('tablet') {
+        display: grid;
+        gap: $space-24;
+        grid-template-columns: 3fr 1fr;
+        grid-row-start: 2;
+        grid-column-start: 2;
+    }
+}
+
+.gridContainer {
+    gap: $space-40;
+
+    @include breakpoint('tablet') {
+        grid-template-columns: 1fr 1fr;
+    }
+
+    @include breakpoint('desktop') {}
+}

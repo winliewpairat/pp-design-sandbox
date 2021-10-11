@@ -1,10 +1,10 @@
 import Nav from "../components/nav";
-import Summary from "../components/summary";
-import Deployed from "../components/deployed";
-import CTA from "../components/cta";
+import Summary from "../components/overview/summary";
+import Deployed from "../components/overview/deployed";
+import CTA from "../components/overview/cta";
 import styles from "../pages/index.module.scss";
-import Receivable from "../components/receivable";
-import Round from "../components/round"
+import Receivable from "../components/overview/receivable";
+import Round from "../components/overview/round"
 import Footer from "../components/footer";
 
 export default function Overview() {

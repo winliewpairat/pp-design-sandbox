@@ -6,6 +6,7 @@ const data = [
   { name: "Biz Funds", value: 4567 },
   { name: "Funds Available", value: 1398 },
 ];
+
 const COLORS = ["#18CDA2", "#54E9C5", "#EEFAF7"];
 
 export default function App() {

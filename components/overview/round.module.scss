@@ -1,8 +1,8 @@
-@import '../styles/theme/breakpoint.scss';
-@import '../styles/theme/colors.scss';
-@import '../styles/theme/type.scss';
-@import '../styles/theme/space.scss';
-@import '../styles/theme/button.scss';
+@import '../../styles/theme/breakpoint.scss';
+@import '../../styles/theme/colors.scss';
+@import '../../styles/theme/type.scss';
+@import '../../styles/theme/space.scss';
+@import '../../styles/theme/button.scss';
 
 .main {
     display: grid;
@@ -61,8 +61,19 @@
 
 .gridContainer .header {
     padding: $space-8 0 0 0;
-    
+
     @include breakpoint('tablet') {
         padding: auto;
+    }
+}
+
+.seemore {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    text-decoration: underline;
+
+    @include breakpoint('tablet') {
+        justify-content: flex-end;
     }
 }
