@@ -19,6 +19,7 @@ class Menu extends React.Component {
         onClick={() => this.close()}
         onKeyDown={() => this.close()}>
             <Link href="">Overview</Link>
+            <Link href="">Investment Round</Link>
             <Link href="">Deposit</Link>
             <Link href="">Withdraw</Link>
             <Link href="">FAQs</Link>
