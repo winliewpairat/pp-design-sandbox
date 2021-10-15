@@ -2,6 +2,7 @@ import React from "react";
 import styles from "./nav.module.scss";
 import Link from "next/link";
 import Menu from "./menu";
+import "../public/CMC-W-Logo.svg"
 
 class NavBar extends React.Component {
   render() {
@@ -9,7 +10,7 @@ class NavBar extends React.Component {
       <header>
         <div className={styles.container}>
           <div className={styles.logo}>
-            <strong>Supply Chain Finance</strong> by ClearMatch Capital
+            <img src="/CMC-W-Logo.svg" width={160} />
           </div>
           <nav className={styles.navbar}>
             <div className={styles.linkStyle}>
@@ -24,7 +25,7 @@ class NavBar extends React.Component {
         </div>
         <div className={styles.containerMobile}>
           <div className={styles.logo}>
-            <strong>Supply Chain Finance</strong> by ClearMatch Capital
+          <img src="/CMC-W-Logo.svg" width={120} />
           </div>
           <nav className={styles.navbar}>
             <div className={styles.linkStyle}>
